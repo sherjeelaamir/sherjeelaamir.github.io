@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sherjeel | Data Scientist</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sherjeel Bin Aamir | Data Scientist</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: #f4f4f4;
-      color: #333;
+      background: #0f172a;
+      color: #e2e8f0;
     }
     header {
       background: #1e293b;
-      color: white;
-      padding: 2rem;
       text-align: center;
+      padding: 2rem 1rem;
+    }
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid #38bdf8;
+      object-fit: cover;
+      margin-bottom: 1rem;
     }
     header h1 {
+      font-size: 2.2rem;
       margin: 0;
-      font-size: 2.5rem;
     }
     header p {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
+      color: #94a3b8;
     }
     section {
       max-width: 900px;
@@ -31,75 +40,141 @@
       padding: 1rem;
     }
     h2 {
-      color: #1e293b;
+      color: #38bdf8;
+      border-bottom: 1px solid #334155;
+      padding-bottom: 0.3rem;
     }
-    .project, .experience {
-      background: white;
+    .item {
+      background: #1e293b;
       padding: 1rem;
-      margin-bottom: 1rem;
       border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+    .item h3 {
+      margin-top: 0;
+      color: #f8fafc;
+    }
+    .item p {
+      margin: 0.3rem 0;
     }
     footer {
       text-align: center;
       padding: 1rem;
       background: #1e293b;
-      color: white;
+      color: #94a3b8;
     }
     a {
-      color: #3b82f6;
+      color: #38bdf8;
       text-decoration: none;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    li {
+      margin-bottom: 0.4rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Sherjeel Bin</h1>
-    <p>Data Scientist | NASA | ML, AI & Data-Driven Innovation</p>
+    <img src="https://media.licdn.com/dms/image/D4D03AQFi2vTqqXL4nQ/profile-displayphoto-shrink_800_800/0/1703162745482?e=2147483647&v=beta&t=f0eDL1Z-88NCTScPDh7SmzR5P5NdRC2ScpR02OmySwI" alt="Sherjeel Bin Aamir">
+    <h1>Sherjeel Bin Aamir</h1>
+    <p><i class="fas fa-flask"></i> Data Scientist | Data Analyst</p>
+    <p><i class="fas fa-envelope"></i> sherjeelbinaamir@gmail.com | <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/binaamir93" target="_blank">binaamir93</a></p>
+    <p><i class="fas fa-phone"></i> +1 314 760 4384 | <i class="fas fa-map-marker-alt"></i> Manchester, MO, 63021</p>
   </header>
 
   <section>
-    <h2>About Me</h2>
-    <p>
-      I'm a passionate data scientist with over 10 years of experience in software engineering and data science. Currently working at NASA, I specialize in building machine learning solutions and uncovering insights through data.
-    </p>
-  </section>
+    <h2>Career Summary</h2>
+    <div class="item">
+      <p>Data Science professional with extensive experience in leveraging machine learning, predictive modeling, and statistical techniques to drive data-driven decision-making. Strong expertise in data analysis, database management, and data modeling. Proven ability to manage and analyze complex datasets, design and implement advanced predictive models, and optimize operational processes. Adept at collaborating with cross-functional teams and communicating insights to stakeholders at various levels. Passionate about applying data science in high-throughput environments to enhance business efficiency and innovation.</p>
+    </div>
 
-  <section>
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Forest Cover Type Classification</h3>
-      <p>Used machine learning models to classify forest cover types using Roosevelt National Forest dataset. Techniques included EDA, feature engineering, and ensemble modeling.</p>
-      <a href="#">View Project</a>
+    <h2>Key Skills</h2>
+    <div class="item">
+      <ul>
+        <li><strong>Machine Learning & Predictive Modeling:</strong> Supervised/Unsupervised Learning, Statistical Modeling, AI (NLP, Churn Prediction), Time Series Forecasting (ARIMA, SARIMA)</li>
+        <li><strong>Data Analysis & Visualization:</strong> Data Cleaning, EDA, Statistical Analysis, Tableau, R-Shiny</li>
+        <li><strong>Cloud & Database Technologies:</strong> AWS, PostgreSQL, Oracle, DataBricks, SQL</li>
+        <li><strong>Programming Languages:</strong> Python, R, SQL, C/C++</li>
+        <li><strong>Data Pipelines & Deployment:</strong> Cloud Analytics Pipelines, API Integration, Data Engineering</li>
+        <li><strong>Project Management & Communication:</strong> Agile/Scrum, Jira, Confluence, ClickUp, Stakeholder Engagement</li>
+      </ul>
     </div>
-    <div class="project">
-      <h3>Locate System – Fleet Tracking</h3>
-      <p>Designed a trip history and live map feature for a fleet management platform serving the construction industry. Integrated real-time data (RPM, speed, location, error codes).</p>
-      <a href="#">View Project</a>
-    </div>
-  </section>
 
-  <section>
-    <h2>Experience</h2>
-    <div class="experience">
-      <h3>Data Scientist – NASA</h3>
-      <p>Developed data pipelines, dashboards, and ML models for analyzing aerospace data. Collaborated with researchers on predictive analytics and modeling projects.</p>
+    <h2>Education</h2>
+    <div class="item">
+      <ul>
+        <li>Master's in Data Science – Maryville University, MO, USA | <strong>4.00 / 4.00</strong> | May 2025</li>
+        <li>Master's in Software Engineering – NUST, Pakistan | <strong>3.55 / 4.00</strong> | 2016</li>
+        <li>Bachelor's in Computer Engineering – NUST, Pakistan | <strong>3.33 / 4.00</strong> | 2011</li>
+      </ul>
     </div>
-    <div class="experience">
-      <h3>Founder – DH Studio</h3>
-      <p>Led architectural projects blending material, light, and emotion. Applied data insights to improve design impact and client engagement.</p>
-    </div>
-  </section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: sherjeel@example.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/sherjeel">linkedin.com/in/sherjeel</a></p>
-    <p>GitHub: <a href="https://github.com/sherjeel">github.com/sherjeel</a></p>
+    <h2>Professional Experience</h2>
+    <div class="item">
+      <h3>Data Scientist | Business Data Analyst – Global Fleet Management (Remote, Canada)</h3>
+      <p>01/2023 – 12/2023</p>
+      <ul>
+        <li>Developed predictive maintenance models using ARIMA/SARIMA</li>
+        <li>Led AI-based NLP initiatives for customer feedback analysis</li>
+        <li>Designed and deployed cloud-based analytics pipelines on AWS</li>
+        <li>Created interactive dashboards in Tableau</li>
+        <li>Optimized data reporting pipelines for better accessibility</li>
+      </ul>
+    </div>
+    <div class="item">
+      <h3>Data Process Manager | Software Project Manager – Government Organization (Pakistan)</h3>
+      <p>01/2013 – 12/2022</p>
+      <ul>
+        <li>Improved HR and procurement workflows by 25%</li>
+        <li>Built predictive models for employee performance and risk profiling</li>
+        <li>Implemented data-driven decision frameworks</li>
+      </ul>
+    </div>
+    <div class="item">
+      <h3>Software Engineer | Data Engineer – Techlogix (Pakistan)</h3>
+      <p>01/2012 – 12/2012</p>
+      <ul>
+        <li>Developed optimized SQL queries for banking systems</li>
+        <li>Integrated Oracle-based financial applications</li>
+      </ul>
+    </div>
+
+    <h2>Projects & Research</h2>
+    <div class="item">
+      <ul>
+        <li>Forest Cover Type Classification – ML classification based on topographical data</li>
+        <li>Predictive Maintenance models for Fleet Management using ARIMA/SARIMA</li>
+        <li>SQL-based Data Processing Pipelines</li>
+      </ul>
+    </div>
+
+    <h2>Technical Proficiencies</h2>
+    <div class="item">
+      <ul>
+        <li><strong>Languages/Tools:</strong> Python, R, SQL, SAS, Tableau</li>
+        <li><strong>Cloud & Databases:</strong> AWS, PostgreSQL, Oracle, DataBricks</li>
+        <li><strong>ML Libraries:</strong> Scikit-learn, TensorFlow, Pandas, NumPy</li>
+        <li><strong>PM Tools:</strong> Agile, Jira, Confluence, ClickUp</li>
+      </ul>
+    </div>
+
+    <h2>Why Me for This Role?</h2>
+    <div class="item">
+      <ul>
+        <li>Strong expertise in machine learning and predictive modeling</li>
+        <li>Experience in cloud-based analytics and database management</li>
+        <li>Proven ability to optimize workflows and processes</li>
+        <li>Excellent communication and stakeholder engagement skills</li>
+        <li>Passionate about precision genomics and innovative data applications</li>
+      </ul>
+    </div>
   </section>
 
   <footer>
-    &copy; 2025 Sherjeel Bin. All rights reserved.
+    &copy; 2025 Sherjeel Bin Aamir | Built with ❤️ and Python
   </footer>
 </body>
 </html>
