@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sherjeel Bin Aamir | Data Scientist</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <style>
     body {
       background-color: #1c1c1c;
@@ -73,15 +72,20 @@
       color: #60a5fa;
       text-decoration: none;
     }
+    .non-selectable {
+      user-select: none;
+    }
     .download-btn {
+      display: block;
+      margin-top: 20px;
+      padding: 10px 15px;
       background-color: #facc15;
       color: #1c1c1c;
-      padding: 10px 15px;
-      font-size: 16px;
-      border: none;
-      cursor: pointer;
-      margin-top: 20px;
-      display: inline-block;
+      text-align: center;
+      font-weight: bold;
+      border-radius: 5px;
+      text-decoration: none;
+      width: fit-content;
     }
   </style>
 </head>
@@ -95,96 +99,48 @@
         <div class="info-line">📧 sherjeelbinaamir@gmail.com</div>
         <div class="info-line">🔗 <a href="https://www.linkedin.com/in/binaamir93" target="_blank">LinkedIn</a></div>
         <div class="info-line">📍 Manchester, MO, 63021</div>
-        <div class="info-line">
-          📞 <img src="https://via.placeholder.com/100x20.png?text=314-760-4384" alt="314-760-4384" />
-        </div>
+        <div class="info-line non-selectable">📞 +1 <img src="phone.png" alt="314-760-4384" height="20"></div>
       </div>
     </div>
 
     <section>
       <div class="section-title">Career Summary</div>
-      <p>Data Science professional with extensive experience in leveraging machine learning, predictive modeling, and statistical techniques to drive data-driven decision-making. Strong expertise in data analysis, database management, and data modeling.</p>
+      <p>Data Science professional with extensive experience in leveraging machine learning, predictive modeling, and statistical techniques to drive data-driven decision-making. Strong expertise in data analysis, database management, and data modeling. Proven ability to manage and analyze complex datasets, design and implement advanced predictive models, and optimize operational processes. Adept at collaborating with cross-functional teams and communicating insights to stakeholders at various levels. Passionate about applying data science in high-throughput environments to enhance business efficiency and innovation.</p>
     </section>
 
     <section>
       <div class="section-title">Key Skills</div>
       <ul>
-        <li>• Machine Learning & Predictive Modeling</li>
-        <li>• Data Analysis & Visualization</li>
-        <li>• Cloud & Database Technologies</li>
-        <li>• Programming Languages: Python, R, SQL</li>
-      </ul>
-    </section>
-
-    <section>
-      <div class="section-title">Education</div>
-      <ul>
-        <li><span class="institution">Maryville University of Saint Louis</span> – Master's in Data Science | CGPA: 4.00 | May 2025</li>
-        <li><span class="institution">NUST, Pakistan</span> – Master's in Software Engineering | CGPA: 3.55 | 2016</li>
-        <li><span class="institution">NUST, Pakistan</span> – Bachelor's in Computer Engineering | CGPA: 3.33 | 2011</li>
+        <li>• Machine Learning & Predictive Modeling: Supervised/Unsupervised Learning, Statistical Modeling, AI (NLP, Churn Prediction), Time Series Forecasting (ARIMA, SARIMA)</li>
+        <li>• Data Analysis & Visualization: Data Cleaning, EDA, Statistical Analysis, Tableau, R-Shiny</li>
+        <li>• Cloud & Database Technologies: AWS, PostgreSQL, Oracle, DataBricks, SQL</li>
+        <li>• Programming Languages: Python, R, SQL, C/C++</li>
+        <li>• Data Pipelines & Deployment: Cloud Analytics Pipelines, API Integration, Data Engineering</li>
+        <li>• Project Management & Communication: Agile/Scrum, Jira, Confluence, Clickup, Stakeholder Engagement, Report Writing, Presentation Skills</li>
       </ul>
     </section>
 
     <section>
       <div class="section-title">Professional Experience</div>
       <ul>
-        <li>
-          <div class="job-title">Data Scientist | Business Data Analyst</div>
-          Global Fleet Management – Remote | 2023
-        </li>
-        <li>
-          <div class="job-title">Data Process Manager | Software Project Manager</div>
-          Government Organization – Onsite (Pakistan) | 2013–2022
-        </li>
+        <li><span class="job-title">Data Scientist | Business Data Analyst</span> – Global Fleet Management | Remote (Canada) | 01/2023 – 12/2023</li>
+        <li>• Developed predictive maintenance models using ARIMA/SARIMA, optimizing fleet operations and reducing downtime.</li>
+        <li>• Led AI-based NLP initiatives for customer feedback analysis, improving customer satisfaction by 20%.</li>
+        <li>• Designed and deployed cloud-based analytics pipelines on AWS for real-time fleet performance monitoring.</li>
+        <li>• Created interactive dashboards in Tableau, enhancing decision-making for stakeholders.</li>
       </ul>
     </section>
 
     <section>
-      <div class="section-title">Projects & Research</div>
+      <div class="section-title">Education</div>
       <ul>
-        <li class="project">• Forest Cover Type Classification</li>
-        <li class="project">• Predictive Maintenance models for Fleet Management</li>
+        <li><span class="institution">Maryville University of Saint Louis</span> – Master's in Data Science | CGPA: 4.00 / 4.00 | May 2025</li>
+        <li><span class="institution">NUST, Pakistan</span> – Master's in Software Engineering | CGPA: 3.55 / 4.00 | 2016</li>
+        <li><span class="institution">NUST, Pakistan</span> – Bachelor's in Computer Engineering | CGPA: 3.33 / 4.00 | 2011</li>
       </ul>
     </section>
 
-    <button class="download-btn" onclick="downloadPDF()">Download as PDF</button>
+    <a href="#" class="download-btn">Download as PDF</a>
   </div>
-
-  <script>
-    function downloadPDF() {
-      const { jsPDF } = window.jspdf;
-      const doc = new jsPDF();
-
-      doc.setFont("helvetica", "bold");
-      doc.setFontSize(20);
-      doc.text("Sherjeel Bin Aamir", 15, 20);
-      
-      doc.setFontSize(14);
-      doc.setTextColor(255, 204, 0);
-      doc.text("Data Scientist | Data Analyst", 15, 30);
-
-      doc.setFontSize(12);
-      doc.setTextColor(240, 240, 240);
-      doc.text("📧 sherjeelbinaamir@gmail.com", 15, 40);
-      doc.text("🔗 LinkedIn: linkedin.com/in/binaamir93", 15, 50);
-      doc.text("📍 Manchester, MO, 63021", 15, 60);
-      doc.text("📞 314-760-4384", 15, 70);
-
-      doc.setFontSize(14);
-      doc.setTextColor(255, 204, 0);
-      doc.text("Career Summary", 15, 85);
-      
-      doc.setFontSize(12);
-      doc.setTextColor(240, 240, 240);
-      doc.text("Data Science professional with extensive experience...", 15, 95, { maxWidth: 180 });
-
-      doc.setFontSize(14);
-      doc.setTextColor(255, 204, 0);
-      doc.text("Education", 15, 110);
-      doc.text("Maryville University - Master's in Data Science (May 2025)", 15, 120);
-
-      doc.save("Sherjeel_Bin_Aamir_Resume.pdf");
-    }
-  </script>
 </body>
 </html>
