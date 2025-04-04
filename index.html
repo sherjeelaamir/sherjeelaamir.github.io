@@ -1,10 +1,10 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sherjeel Bin Aamir | Data Scientist</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <style>
     body {
       background-color: #1c1c1c;
@@ -73,6 +73,16 @@
       color: #60a5fa;
       text-decoration: none;
     }
+    .download-btn {
+      background-color: #facc15;
+      color: #1c1c1c;
+      padding: 10px 15px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      margin-top: 20px;
+      display: inline-block;
+    }
   </style>
 </head>
 <body>
@@ -85,91 +95,88 @@
         <div class="info-line">📧 sherjeelbinaamir@gmail.com</div>
         <div class="info-line">🔗 <a href="https://www.linkedin.com/in/binaamir93" target="_blank">LinkedIn</a></div>
         <div class="info-line">📍 Manchester, MO, 63021</div>
+        <div class="info-line">
+          📞 <img src="https://via.placeholder.com/100x20.png?text=314-760-4384" alt="314-760-4384" />
+        </div>
       </div>
     </div>
 
     <section>
       <div class="section-title">Career Summary</div>
-      <p>Data Science professional with extensive experience in leveraging machine learning, predictive modeling, and statistical techniques to drive data-driven decision-making. Strong expertise in data analysis, database management, and data modeling. Proven ability to manage and analyze complex datasets, design and implement advanced predictive models, and optimize operational processes. Adept at collaborating with cross-functional teams and communicating insights to stakeholders at various levels. Passionate about applying data science in high-throughput environments to enhance business efficiency and innovation.</p>
+      <p>Data Science professional with extensive experience in leveraging machine learning, predictive modeling, and statistical techniques to drive data-driven decision-making...</p>
     </section>
 
     <section>
       <div class="section-title">Key Skills</div>
       <ul>
-        <li>• Machine Learning & Predictive Modeling: Supervised/Unsupervised Learning, Statistical Modeling, AI (NLP, Churn Prediction), Time Series Forecasting (ARIMA, SARIMA)</li>
-        <li>• Data Analysis & Visualization: Data Cleaning, EDA, Statistical Analysis, Tableau, R-Shiny</li>
-        <li>• Cloud & Database Technologies: AWS, PostgreSQL, Oracle, DataBricks, SQL</li>
-        <li>• Programming Languages: Python, R, SQL, C/C++</li>
-        <li>• Data Pipelines & Deployment: Cloud Analytics Pipelines, API Integration, Data Engineering</li>
-        <li>• Project Management & Communication: Agile/Scrum, Jira, Confluence, Clickup, Stakeholder Engagement, Report Writing, Presentation Skills</li>
+        <li>• Machine Learning & Predictive Modeling</li>
+        <li>• Data Analysis & Visualization</li>
+        <li>• Cloud & Database Technologies</li>
+        <li>• Programming Languages: Python, R, SQL</li>
       </ul>
     </section>
 
     <section>
       <div class="section-title">Education</div>
       <ul>
-        <li><span class="institution">Maryville University of Saint Louis</span> – Master's in Data Science | CGPA: 4.00 / 4.00 | May 2025</li>
-        <li><span class="institution">NUST, Pakistan</span> – Master's in Software Engineering | CGPA: 3.55 / 4.00 | 2016</li>
-        <li><span class="institution">NUST, Pakistan</span> – Bachelor's in Computer Engineering | CGPA: 3.33 / 4.00 | 2011</li>
+        <li><span class="institution">Maryville University of Saint Louis</span> – Master's in Data Science | May 2025</li>
+        <li><span class="institution">NUST, Pakistan</span> – Master's in Software Engineering | 2016</li>
       </ul>
     </section>
 
-    <section>
-      <div class="section-title">Professional Experience</div>
-      <ul>
-        <li>
-          <div class="job-title">Data Scientist | Business Data Analyst</div>
-          Global Fleet Management – Remote (Canada) | 01/2023 – 12/2023
-          <ul>
-            <li>• Developed predictive maintenance models using ARIMA/SARIMA, optimizing fleet operations and reducing downtime.</li>
-            <li>• Led AI-based NLP initiatives for customer feedback analysis, improving customer satisfaction by 20%.</li>
-            <li>• Designed and deployed cloud-based analytics pipelines on AWS for real-time fleet performance monitoring.</li>
-            <li>• Created interactive dashboards in Tableau, enhancing decision-making for stakeholders.</li>
-            <li>• Collaborated cross-functionally to automate and optimize data reporting pipelines, improving data accessibility.</li>
-          </ul>
-        </li>
-        <li>
-          <div class="job-title">Data Process Manager | Software Project Manager</div>
-          Government Organization – Onsite (Pakistan) | 01/2013 – 12/2022
-          <ul>
-            <li>• Spearheaded ERP data analysis and process optimization, improving HR and procurement workflows by 25%.</li>
-            <li>• Built predictive models for employee performance assessment and medical risk profiling.</li>
-            <li>• Implemented data-driven decision frameworks, enhancing operational efficiency.</li>
-            <li>• Designed and deployed SQL-based data processing pipelines, improving database performance.</li>
-          </ul>
-        </li>
-        <li>
-          <div class="job-title">Software Engineer | Data Engineer</div>
-          Techlogix – Onsite (Pakistan) | 01/2012 – 12/2012
-          <ul>
-            <li>• Developed and optimized SQL queries for banking applications, improving data processing efficiency.</li>
-            <li>• Integrated and deployed Oracle-based financial applications, enhancing transaction accuracy.</li>
-          </ul>
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <div class="section-title">Projects & Research</div>
-      <ul>
-        <li class="project">• Forest Cover Type Classification – Built a machine learning model to classify forest types using geographical and topographical data.</li>
-        <li class="project">• Predictive Maintenance models for Fleet Management using ARIMA/SARIMA</li>
-        <li class="project">• SQL-based data processing pipelines</li>
-      </ul>
-    </section>
-
-    <section>
-      <div class="section-title">Technical Proficiencies</div>
-      <ul>
-        <li>• Data Science & Analytics: Python, R, SQL, SAS, Tableau</li>
-        <li>• Cloud & Databases: AWS, PostgreSQL, Oracle, DataBricks</li>
-        <li>• Big Data & ML Libraries: Scikit-learn, TensorFlow, Pandas, NumPy</li>
-        <li>• Project Management: Agile, Jira, Confluence, ClickUp</li>
-      </ul>
-    </section>
+    <button class="download-btn" onclick="downloadPDF()">Download as PDF</button>
   </div>
+
+  <script>
+    function downloadPDF() {
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF();
+
+      doc.setFont("helvetica", "bold");
+      doc.setFontSize(20);
+      doc.text("Sherjeel Bin Aamir", 15, 20);
+      
+      doc.setFontSize(14);
+      doc.setTextColor(255, 204, 0);
+      doc.text("Data Scientist | Data Analyst", 15, 30);
+
+      doc.setFontSize(12);
+      doc.setTextColor(240, 240, 240);
+      doc.text("📧 sherjeelbinaamir@gmail.com", 15, 40);
+      doc.text("🔗 LinkedIn: linkedin.com/in/binaamir93", 15, 50);
+      doc.text("📍 Manchester, MO, 63021", 15, 60);
+      doc.text("📞 314-760-4384", 15, 70);
+
+      doc.setFontSize(14);
+      doc.setTextColor(255, 204, 0);
+      doc.text("Career Summary", 15, 85);
+      
+      doc.setFontSize(12);
+      doc.setTextColor(240, 240, 240);
+      doc.text("Data Science professional with extensive experience...", 15, 95, { maxWidth: 180 });
+
+      doc.setFontSize(14);
+      doc.setTextColor(255, 204, 0);
+      doc.text("Key Skills", 15, 110);
+
+      doc.setFontSize(12);
+      doc.setTextColor(240, 240, 240);
+      doc.text("• Machine Learning & Predictive Modeling", 15, 120);
+      doc.text("• Data Analysis & Visualization", 15, 130);
+      doc.text("• Cloud & Database Technologies", 15, 140);
+      doc.text("• Programming Languages: Python, R, SQL", 15, 150);
+
+      doc.setFontSize(14);
+      doc.setTextColor(255, 204, 0);
+      doc.text("Education", 15, 165);
+
+      doc.setFontSize(12);
+      doc.setTextColor(240, 240, 240);
+      doc.text("Maryville University of Saint Louis - Master's in Data Science (May 2025)", 15, 175);
+      doc.text("NUST, Pakistan - Master's in Software Engineering (2016)", 15, 185);
+
+      doc.save("Sherjeel_Bin_Aamir_Resume.pdf");
+    }
+  </script>
 </body>
 </html>
-```
-
-### Remember to replace the GitHub link with your actual username and repository name if it's different from what I've used above. Let me know if you need further adjustments!
