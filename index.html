@@ -3,201 +3,947 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sherjeel Bin Aamir | Data Scientist</title>
+
+  <meta name="description"
+        content="Sherjeel Bin Aamir - Data Scientist, Data Analytics & Product Manager">
+
+  <title>Sherjeel Bin Aamir | Data Scientist | Product Manager</title>
+
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       background-color: #1c1c1c;
       color: #f0f0f0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
+      line-height: 1.6;
     }
+
     .container {
-      max-width: 1000px;
+      max-width: 1050px;
       margin: 0 auto;
-      padding: 40px 20px;
+      padding: 45px 25px;
     }
+
     .header {
       display: flex;
       align-items: center;
       gap: 30px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #3d3d3d;
     }
+
     .profile-pic {
-      width: 150px;
-      height: 150px;
+      width: 155px;
+      height: 155px;
+      min-width: 155px;
       border-radius: 50%;
       background-color: #333;
       background-size: cover;
       background-position: center;
-      background-image: url('https://raw.githubusercontent.com/sherjeelaamir/sherjeelaamir.github.io/main/profile.png');
+      background-image: url(
+        'https://raw.githubusercontent.com/sherjeelaamir/sherjeelaamir.github.io/main/profile.png'
+      );
+      border: 3px solid #facc15;
     }
+
     h1 {
-      font-size: 2.5rem;
-      margin: 0;
+      font-size: 2.6rem;
+      margin: 0 0 5px 0;
+      color: #ffffff;
     }
-    h2 {
-      font-size: 1.8rem;
+
+    .headline {
+      font-size: 1.35rem;
+      font-weight: 600;
       color: #facc15;
-    }
-    section {
-      margin-top: 40px;
-    }
-    .section-title {
-      border-bottom: 2px solid #444;
-      padding-bottom: 5px;
       margin-bottom: 15px;
-      font-size: 1.4rem;
-      color: #facc15;
     }
-    ul, li {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 10px 0;
-    }
+
     .info-line {
       margin-bottom: 5px;
+      color: #d4d4d4;
     }
-    .job-title {
-      font-weight: bold;
-      color: #93c5fd;
-    }
-    .institution {
-      font-weight: bold;
-      color: #86efac;
-    }
+
     a {
       color: #60a5fa;
       text-decoration: none;
     }
-    .non-selectable {
-      user-select: none;
+
+    a:hover {
+      text-decoration: underline;
     }
-    .download-btn {
+
+    section {
+      margin-top: 38px;
+    }
+
+    .section-title {
+      border-bottom: 2px solid #444;
+      padding-bottom: 7px;
+      margin-bottom: 18px;
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: #facc15;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    p {
+      color: #d6d6d6;
+      font-size: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 12px;
+      color: #d6d6d6;
+    }
+
+    .job {
+      margin-bottom: 30px;
+      padding-left: 18px;
+      border-left: 3px solid #444;
+    }
+
+    .job:hover {
+      border-left-color: #facc15;
+    }
+
+    .job-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #93c5fd;
+    }
+
+    .company {
+      font-weight: 700;
+      color: #86efac;
+    }
+
+    .date {
+      color: #a3a3a3;
+      font-size: 0.95rem;
+    }
+
+    .job-description {
+      margin-top: 10px;
+    }
+
+    .job-description li {
+      margin-bottom: 8px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .skill-card {
+      background-color: #242424;
+      border: 1px solid #3d3d3d;
+      border-radius: 8px;
+      padding: 17px;
+    }
+
+    .skill-card strong {
+      color: #facc15;
       display: block;
-      margin-top: 20px;
-      padding: 10px 15px;
+      margin-bottom: 5px;
+    }
+
+    .skill-card span {
+      color: #d4d4d4;
+    }
+
+    .education-item {
+      background-color: #242424;
+      border-left: 3px solid #86efac;
+      padding: 14px 18px;
+      margin-bottom: 14px;
+      border-radius: 4px;
+    }
+
+    .education-item strong {
+      color: #ffffff;
+    }
+
+    .education-meta {
+      color: #a3a3a3;
+      margin-top: 3px;
+    }
+
+    .project {
+      background-color: #242424;
+      border: 1px solid #3d3d3d;
+      border-radius: 8px;
+      padding: 18px;
+      margin-bottom: 15px;
+    }
+
+    .project-title {
+      color: #93c5fd;
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 7px;
+    }
+
+    .project p {
+      margin: 0;
+    }
+
+    .expertise-list {
+      columns: 2;
+      column-gap: 40px;
+    }
+
+    .expertise-list li {
+      break-inside: avoid;
+      margin-bottom: 10px;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 35px;
+      padding: 12px 20px;
       background-color: #facc15;
       color: #1c1c1c;
       text-align: center;
-      font-weight: bold;
-      border-radius: 5px;
+      font-weight: 700;
+      border-radius: 6px;
       text-decoration: none;
-      width: fit-content;
+    }
+
+    .download-btn:hover {
+      background-color: #fde047;
+      text-decoration: none;
+    }
+
+    .tagline {
+      margin-top: 12px;
+      font-size: 0.98rem;
+      color: #a3a3a3;
+    }
+
+    @media (max-width: 700px) {
+
+      .container {
+        padding: 30px 18px;
+      }
+
+      .header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .expertise-list {
+        columns: 1;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
+
 <body>
-  <div class="container">
-    <div class="header">
-      <div class="profile-pic"></div>
-      <div>
-        <h1>Sherjeel Bin Aamir</h1>
-        <h2>Data Scientist | Data Analyst</h2>
-        <div class="info-line">📧 sherjeelbinaamir@gmail.com</div>
-        <div class="info-line">🔗 <a href="https://www.linkedin.com/in/binaamir93" target="_blank">LinkedIn</a></div>
-        <div class="info-line">📍 Manchester, MO, 63021</div>
-        <div class="info-line non-selectable">📞 +1 <img src="phone.png" alt="314-760-4384" height="20"></div>
+
+<div class="container">
+
+  <!-- ================= HEADER ================= -->
+
+  <div class="header">
+
+    <div class="profile-pic"></div>
+
+    <div>
+
+      <h1>Sherjeel Bin Aamir</h1>
+
+      <div class="headline">
+        Data Scientist | Data Analytics & AI | Product Manager
       </div>
+
+      <div class="info-line">
+        📧
+        <a href="mailto:sherjeelbinaamir@gmail.com">
+          sherjeelbinaamir@gmail.com
+        </a>
+      </div>
+
+      <div class="info-line">
+        🔗
+        <a
+          href="https://www.linkedin.com/in/binaamir93"
+          target="_blank"
+          rel="noopener noreferrer">
+          LinkedIn
+        </a>
+      </div>
+
+      <div class="info-line">
+        📍 Islamabad, Pakistan
+      </div>
+
+      <div class="info-line">
+        📞 +92 321 513 7445
+      </div>
+
+      <div class="tagline">
+        Turning data, AI and technology into measurable business and product outcomes.
+      </div>
+
     </div>
 
-    <section>
-      <div class="section-title">Career Summary</div>
-      <p>Data Science professional with extensive experience in leveraging machine learning, predictive modeling, and statistical techniques to drive data-driven decision-making. Strong expertise in data analysis, database management, and data modeling. Proven ability to manage and analyze complex datasets, design and implement advanced predictive models, and optimize operational processes. Adept at collaborating with cross-functional teams and communicating insights to stakeholders at various levels. Passionate about applying data science in high-throughput environments to enhance business efficiency and innovation.</p>
-    </section>
-
-<section>
-  <div class="section-title">Key Skills</div>
-  <ul>
-<li>
-      • &emsp;<strong>Machine Learning & Predictive Modeling:</strong> Supervised/Unsupervised Learning, Statistical Modeling  
-    </li>
-    <li>
-      • &emsp;<strong>AI & Forecasting:</strong> NLP, Churn Prediction, Time Series Forecasting (ARIMA, SARIMA)
-    </li>
-     <li>
-      • &emsp;<strong>Data Analysis & Visualization:</strong> Data Cleaning, EDA, Statistical Analysis, Tableau, R-Shiny
-    </li>
-    <li>
-      • &emsp;<strong>Cloud & Database Technologies:</strong> AWS, PostgreSQL, Oracle, DataBricks, SQL
-    </li>
-    <li>
-      • &emsp;<strong>Programming Languages:</strong> Python, R, SQL, C/C++
-    </li>
-    <li>
-      • &emsp;<strong>Data Pipelines & Deployment:</strong> Cloud Analytics Pipelines, API Integration, Data Engineering
-    </li>
-    <li>
-      • &emsp;<strong>Project Management & Communication:</strong> Agile/Scrum, Jira, Confluence, ClickUp, Report Writing, Presentation Skills
-    </li>
-  </ul>
-</section>
-
-<section>
-  <div class="section-title">Professional Experience</div>
-  <ul>
-    <li>
-      <span class="job-title">Business Data Analyst / Product Manager</span> – Global Fleet Management | Remote (Canada) | 01/2023 – 12/2023
-      <br><br>
-      <ul>
-        <li>• &emsp;Gathered business requirements and delivered data-driven insights through detailed reports and dashboards.</li>
-        <li>• &emsp;Developed and implemented predictive maintenance models using ARIMA and SARIMA, improving operational efficiency.</li>
-        <li>• &emsp;Led AI-based NLP initiatives for customer feedback analysis, boosting customer satisfaction by 20%.</li>
-        <li>• &emsp;Managed software projects using Agile methodologies, ensuring timely delivery and integration of fleet management solutions.</li>
-        <li>• &emsp;Utilized Tableau for data visualization and stakeholder presentations.</li>
-      </ul>
-    </li>
-    <li>
-      <span class="job-title">Data Process Manager / Software Project Manager</span> – Government Organization | Onsite (Pakistan) | 01/2013 – 12/2022
-      <br><br>
-      <ul>
-        <li>• &emsp;Managed ERP system data analysis and process optimization, resulting in a 25% improvement in HR decision-making.</li>
-        <li>• &emsp;Spearheaded automation of IT procurement and software testing processes, reducing manual effort by 20%.</li>
-        <li>• &emsp;Developed data pipelines and visualizations in Python, enhancing data extraction and reporting capabilities.</li>
-        <li>• &emsp;Oversaw system integration projects to improve performance and ensure seamless data flow.</li>
-        <li>• &emsp;Applied feature engineering techniques to build data models for HR profile analysis based on medical records.</li>
-      </ul>
-    </li>
-    <li>
-      <span class="job-title">Software Engineer / Data Engineer</span> – Techlogix | Onsite (Pakistan) | 01/2012 – 12/2012
-      <br><br>
-      <ul>
-        <li>• &emsp;Supported deployment of Oracle-based banking software, enhancing system accuracy and performance by 20%.</li>
-        <li>• &emsp;Collaborated with cross-functional teams to develop and implement complex SQL queries for improved data processing.</li>
-      </ul>
-    </li>
-  </ul>
-</section>
-
-<section>
-  <div class="section-title">Education</div>
-  <ul>
-    <li>Master's in Data Science – Maryville University of Saint Louis, MO, USA | CGPA: 4.00 / 4.00 | 2025</li>
-    <li>Master's in Software Engineering – NUST, Pakistan | CGPA: 3.55 / 4.00 | 2016</li>
-    <li>Bachelor's in Computer Engineering – NUST, Pakistan | CGPA: 3.33 / 4.00 | 2011</li>
-  </ul>
-</section>
-
-
-       <section>
-      <div class="section-title">Projects & Research</div>
-      <ul>
-        <li>Forest Cover Type Classification – Built a machine learning model to classify forest types using geographical and topographical data.</li>
-        <li>Predictive Maintenance models for Fleet Management using ARIMA/SARIMA</li>
-        <li>SQL-based data processing pipelines</li>
-      </ul>
-    </section>
-
-    <section>
-      <div class="section-title">Technical Proficiencies</div>
-      <ul>
-        <li>Data Science & Analytics: Python, R, SQL, SAS, Tableau</li>
-        <li>Cloud & Databases: AWS, PostgreSQL, Oracle, DataBricks</li>
-        <li>Big Data & ML Libraries: Scikit-learn, TensorFlow, Pandas, NumPy</li>
-        <li>Project Management: Agile, Jira, Confluence, ClickUp</li>
-      </ul>
-    </section>
-
-    <a href="https://raw.githubusercontent.com/sherjeelaamir/sherjeelaamir.github.io/main/Sherjeel - Data Scientist.pdf" class="download-btn" download>Download as PDF</a>
   </div>
+
+
+  <!-- ================= PROFESSIONAL SUMMARY ================= -->
+
+  <section>
+
+    <div class="section-title">
+      Professional Summary
+    </div>
+
+    <p>
+      Data Scientist and Product Manager with 10+ years of experience across
+      <strong>data science, data analytics, data engineering, software engineering,
+      product management and enterprise IT</strong>. Holds an
+      <strong>MS in Data Science from Maryville University, USA</strong>,
+      an MS in Computer Software Engineering and a BE in Computer Engineering
+      from NUST, Pakistan.
+    </p>
+
+    <p>
+      Experienced in transforming complex datasets into actionable insights
+      through <strong>machine learning, predictive analytics, statistical analysis,
+      exploratory data analysis, data engineering and business intelligence</strong>.
+      Hands-on expertise includes Python, SQL, Pandas, XGBoost, LightGBM,
+      PyTorch, NLP, computer vision, ARIMA forecasting, BigQuery, Vertex AI,
+      Oracle PL/SQL, ETL/ELT and BI platforms.
+    </p>
+
+    <p>
+      Currently working as a
+      <strong>Product Manager – Data, Analytics & CRM</strong>, combining
+      technical data expertise with product ownership and business strategy.
+      Leads product roadmaps, requirements, PRDs, user stories, Jira backlogs,
+      stakeholder coordination and cross-functional delivery while building
+      data-driven products, integrations and automation solutions.
+    </p>
+
+    <p>
+      Strong background in connecting
+      <strong>business requirements, data, engineering and product strategy</strong>.
+      Experienced with CRM and RevOps platforms including HubSpot, Zoho and
+      GoHighLevel, as well as REST APIs, webhooks and workflow automation.
+      Brings a combination of analytical thinking, technical depth and product
+      leadership to data and AI initiatives.
+    </p>
+
+  </section>
+
+
+  <!-- ================= CORE SKILLS ================= -->
+
+  <section>
+
+    <div class="section-title">
+      Core Skills
+    </div>
+
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <strong>Data Science & Machine Learning</strong>
+        <span>
+          Supervised & Unsupervised Learning, Feature Engineering,
+          Model Development, Model Evaluation, XGBoost, LightGBM,
+          Scikit-learn
+        </span>
+      </div>
+
+      <div class="skill-card">
+        <strong>AI & Deep Learning</strong>
+        <span>
+          PyTorch, Computer Vision, ResNet18, NLP,
+          Sentiment Analysis, Deep Learning
+        </span>
+      </div>
+
+      <div class="skill-card">
+        <strong>Predictive Analytics</strong>
+        <span>
+          Time Series Forecasting, ARIMA, Statistical Analysis,
+          Predictive Modeling, Trend Analysis
+        </span>
+      </div>
+
+      <div class="skill-card">
+        <strong>Data Analytics</strong>
+        <span>
+          Python, Pandas, EDA, Data Cleaning, Data Transformation,
+          Statistical Analysis, KPI Development
+        </span>
+      </div>
+
+      <div class="skill-card">
+        <strong>Data Engineering</strong>
+        <span>
+          ETL/ELT, SQL, Oracle PL/SQL, GCP BigQuery,
+          Cloud Functions, Data Pipelines, Data Integration
+        </span>
+      </div>
+
+      <div class="skill-card">
+        <strong>Cloud & AI Platforms</strong>
+        <span>
+          Google Cloud Platform, BigQuery, Vertex AI,
+          Cloud Functions and cloud-based analytics workflows
+        </span>
+      </div>
+
+      <div class="skill-card">
+        <strong>Business Intelligence</strong>
+        <span>
+          Power BI, Tableau, Looker Studio,
+          KPI Dashboards, Business Reporting and Visualization
+        </span>
+      </div>
+
+      <div class="skill-card">
+        <strong>Product Management</strong>
+        <span>
+          Product Strategy, Roadmaps, PRDs, User Stories,
+          Backlog Management, Jira, Agile/Scrum and Stakeholder Management
+        </span>
+      </div>
+
+      <div class="skill-card">
+        <strong>CRM & RevOps</strong>
+        <span>
+          HubSpot, Zoho, GoHighLevel, CRM Data,
+          Sales Operations, Data Migration and Process Automation
+        </span>
+      </div>
+
+      <div class="skill-card">
+        <strong>APIs & Automation</strong>
+        <span>
+          REST APIs, Webhooks, Make.com, Zapier,
+          API Integrations and Workflow Automation
+        </span>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= PROFESSIONAL EXPERIENCE ================= -->
+
+  <section>
+
+    <div class="section-title">
+      Professional Experience
+    </div>
+
+
+    <!-- POSITRACE -->
+
+    <div class="job">
+
+      <div class="job-title">
+        Product Manager – Data, Analytics & CRM
+      </div>
+
+      <div class="company">
+        PosiTrace, Canada | Remote
+      </div>
+
+      <div class="date">
+        January 2023 – Present
+      </div>
+
+      <ul class="job-description">
+
+        <li>
+          • Lead data, analytics and CRM initiatives as a product owner,
+          translating business needs into product requirements, PRDs,
+          user stories and actionable development backlogs.
+        </li>
+
+        <li>
+          • Own product roadmap and prioritize data-driven features in
+          collaboration with executives, sales, operations and engineering teams.
+        </li>
+
+        <li>
+          • Manage Agile delivery processes including Jira backlog management,
+          sprint planning, requirements refinement and cross-functional coordination.
+        </li>
+
+        <li>
+          • Led migration of business data from Zoho to HubSpot while maintaining
+          data integrity and supporting CRM transformation initiatives.
+        </li>
+
+        <li>
+          • Designed and supported REST API integrations, including
+          ZoomInfo integration, to improve data availability and operational workflows.
+        </li>
+
+        <li>
+          • Contributed to the development and launch of a real-time dispatch
+          module, taking the initiative from product concept through delivery.
+        </li>
+
+        <li>
+          • Collaborate with engineering and business stakeholders to define
+          data requirements, integration workflows and scalable product solutions.
+        </li>
+
+        <li>
+          • Apply analytics and data-driven decision-making to improve product,
+          CRM and operational processes.
+        </li>
+
+      </ul>
+
+    </div>
+
+
+    <!-- SPD -->
+
+    <div class="job">
+
+      <div class="job-title">
+        Manager IT
+      </div>
+
+      <div class="company">
+        Strategic Plans Division (SPD), Pakistan
+      </div>
+
+      <div class="date">
+        January 2013 – December 2023
+      </div>
+
+      <ul class="job-description">
+
+        <li>
+          • Led enterprise IT strategy, technology planning, budgeting,
+          policies and technical team management.
+        </li>
+
+        <li>
+          • Managed enterprise software and ERP environments supporting
+          HR, procurement and finance functions.
+        </li>
+
+        <li>
+          • Worked extensively with Oracle databases, PL/SQL,
+          data management and enterprise data processing.
+        </li>
+
+        <li>
+          • Developed and optimized PL/SQL data pipelines, achieving
+          approximately 15% improvement in processing speed.
+        </li>
+
+        <li>
+          • Developed Selenium-based data collection and automation workflows,
+          improving data ingestion efficiency by approximately 30%.
+        </li>
+
+        <li>
+          • Applied exploratory data analysis and analytics techniques to
+          improve data-driven decision-making.
+        </li>
+
+        <li>
+          • Developed KPI reporting and dashboards that reduced manual
+          operational tracking by approximately 20%.
+        </li>
+
+        <li>
+          • Managed data center operations, backup and disaster recovery,
+          infrastructure, security and technology vendors.
+        </li>
+
+        <li>
+          • Led cross-functional technical teams and coordinated enterprise
+          technology projects from requirements through implementation.
+        </li>
+
+      </ul>
+
+    </div>
+
+
+    <!-- TECHLOGIX -->
+
+    <div class="job">
+
+      <div class="job-title">
+        Software Engineer
+      </div>
+
+      <div class="company">
+        Techlogix, Pakistan
+      </div>
+
+      <div class="date">
+        January 2012 – December 2012
+      </div>
+
+      <ul class="job-description">
+
+        <li>
+          • Supported deployment and implementation of Oracle-based
+          banking software for Askari Bank.
+        </li>
+
+        <li>
+          • Developed and optimized SQL scripts, improving query
+          performance and processing accuracy by approximately 20%.
+        </li>
+
+        <li>
+          • Prepared test plans, supported User Acceptance Testing (UAT)
+          and worked directly with implementation teams.
+        </li>
+
+        <li>
+          • Collaborated with technical and business stakeholders to
+          troubleshoot database and application issues.
+        </li>
+
+      </ul>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= DATA SCIENCE PROJECTS ================= -->
+
+  <section>
+
+    <div class="section-title">
+      Data Science & AI Projects
+    </div>
+
+
+    <div class="project">
+
+      <div class="project-title">
+        Forest Cover Type Classification
+      </div>
+
+      <p>
+        Developed a machine learning classification solution using
+        <strong>LightGBM and XGBoost</strong> for forest cover classification.
+        Applied feature engineering, model training and evaluation techniques,
+        achieving approximately <strong>90% classification accuracy</strong>.
+      </p>
+
+    </div>
+
+
+    <div class="project">
+
+      <div class="project-title">
+        Indoor Scene Classification – Computer Vision
+      </div>
+
+      <p>
+        Developed a deep learning computer vision model using
+        <strong>PyTorch and ResNet18</strong> for indoor scene classification.
+        Worked with a dataset containing <strong>15,000+ images</strong>
+        and achieved approximately <strong>79.41% classification accuracy</strong>.
+      </p>
+
+    </div>
+
+
+    <div class="project">
+
+      <div class="project-title">
+        Data Engineering & Analytics Pipelines
+      </div>
+
+      <p>
+        Designed and optimized SQL and PL/SQL-based data processing pipelines,
+        automated data extraction workflows and analytics processes to improve
+        data availability, ingestion and operational reporting.
+      </p>
+
+    </div>
+
+
+    <div class="project">
+
+      <div class="project-title">
+        CRM & Data Integration
+      </div>
+
+      <p>
+        Worked on CRM data transformation and integration initiatives involving
+        <strong>Zoho, HubSpot, GoHighLevel, REST APIs and webhooks</strong>,
+        supporting data migration, process automation and operational analytics.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= PRODUCT MANAGEMENT ================= -->
+
+  <section>
+
+    <div class="section-title">
+      Product Management Expertise
+    </div>
+
+    <ul class="expertise-list">
+
+      <li>• Product Strategy & Roadmapping</li>
+      <li>• Data Product Development</li>
+      <li>• Product Requirements Documents (PRDs)</li>
+      <li>• User Stories & Acceptance Criteria</li>
+      <li>• Product Backlog Management</li>
+      <li>• Jira & Agile/Scrum</li>
+      <li>• Stakeholder Management</li>
+      <li>• Executive & Business Communication</li>
+      <li>• Cross-functional Team Leadership</li>
+      <li>• Data-driven Product Decisions</li>
+      <li>• CRM Product & Data Strategy</li>
+      <li>• API & System Integration</li>
+      <li>• Process Automation</li>
+      <li>• Product Launch & Delivery</li>
+      <li>• Business Requirements Analysis</li>
+      <li>• Technology & Data Strategy</li>
+
+    </ul>
+
+  </section>
+
+
+  <!-- ================= TECHNICAL PROFICIENCIES ================= -->
+
+  <section>
+
+    <div class="section-title">
+      Technical Proficiencies
+    </div>
+
+    <ul>
+
+      <li>
+        <strong>Programming:</strong>
+        Python, SQL, Oracle PL/SQL
+      </li>
+
+      <li>
+        <strong>Machine Learning:</strong>
+        XGBoost, LightGBM, Scikit-learn
+      </li>
+
+      <li>
+        <strong>Deep Learning:</strong>
+        PyTorch, ResNet18, Computer Vision
+      </li>
+
+      <li>
+        <strong>Data Analytics:</strong>
+        Pandas, Exploratory Data Analysis, Statistical Analysis,
+        Feature Engineering
+      </li>
+
+      <li>
+        <strong>Forecasting:</strong>
+        ARIMA, Time Series Analysis
+      </li>
+
+      <li>
+        <strong>Data Engineering:</strong>
+        ETL/ELT, Data Pipelines, SQL, Oracle, Data Integration
+      </li>
+
+      <li>
+        <strong>Cloud:</strong>
+        Google Cloud Platform, BigQuery, Vertex AI, Cloud Functions
+      </li>
+
+      <li>
+        <strong>Business Intelligence:</strong>
+        Power BI, Tableau, Looker Studio
+      </li>
+
+      <li>
+        <strong>CRM:</strong>
+        HubSpot, Zoho, GoHighLevel
+      </li>
+
+      <li>
+        <strong>Automation & Integration:</strong>
+        REST APIs, Webhooks, Make.com, Zapier
+      </li>
+
+      <li>
+        <strong>Product & Collaboration:</strong>
+        Jira, Agile/Scrum, Product Backlogs, PRDs,
+        Stakeholder Management
+      </li>
+
+    </ul>
+
+  </section>
+
+
+  <!-- ================= EDUCATION ================= -->
+
+  <section>
+
+    <div class="section-title">
+      Education
+    </div>
+
+
+    <div class="education-item">
+
+      <strong>
+        MS Data Science
+      </strong>
+
+      <div class="education-meta">
+        Maryville University, USA |
+        2025 |
+        GPA: 4.00 / 4.00
+      </div>
+
+    </div>
+
+
+    <div class="education-item">
+
+      <strong>
+        MS Computer Software Engineering
+      </strong>
+
+      <div class="education-meta">
+        National University of Sciences and Technology (NUST), Pakistan |
+        2016 |
+        GPA: 3.55 / 4.00
+      </div>
+
+    </div>
+
+
+    <div class="education-item">
+
+      <strong>
+        BE Computer Engineering
+      </strong>
+
+      <div class="education-meta">
+        National University of Sciences and Technology (NUST), Pakistan |
+        2011 |
+        GPA: 3.33 / 4.00
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ================= RESEARCH / TRAINING ================= -->
+
+  <section>
+
+    <div class="section-title">
+      Research & Data Science Work
+    </div>
+
+    <ul>
+
+      <li>
+        • <strong>Machine Learning – Forest Cover Classification:</strong>
+        LightGBM/XGBoost, feature engineering and gradient boosting.
+      </li>
+
+      <li>
+        • <strong>Computer Vision – Indoor Scene Classification:</strong>
+        PyTorch, ResNet18 and image classification using 15,000+ images.
+      </li>
+
+      <li>
+        • <strong>Data Analytics:</strong>
+        Exploratory data analysis, statistical analysis and visualization.
+      </li>
+
+      <li>
+        • <strong>Data Engineering:</strong>
+        SQL/PLSQL pipelines, ETL processes and automated data ingestion.
+      </li>
+
+    </ul>
+
+  </section>
+
+
+  <!-- ================= VALUE PROPOSITION ================= -->
+
+  <section>
+
+    <div class="section-title">
+      Professional Value
+    </div>
+
+    <p>
+      <strong>Data Science + Product Management + Engineering</strong>
+    </p>
+
+    <p>
+      I combine hands-on data science and engineering capabilities with
+      product management and enterprise technology leadership. This enables
+      me to move beyond simply analyzing data and participate across the full
+      lifecycle of a data-driven product — from identifying business problems
+      and defining requirements, to building analytical solutions, coordinating
+      engineering teams and delivering measurable business outcomes.
+    </p>
+
+  </section>
+
+
+  <!-- ================= DOWNLOAD ================= -->
+
+  <a
+    href="https://raw.githubusercontent.com/sherjeelaamir/sherjeelaamir.github.io/main/Sherjeel%20-%20Data%20Scientist.pdf"
+    class="download-btn"
+    download>
+    Download Resume PDF
+  </a>
+
+</div>
+
 </body>
 </html>
